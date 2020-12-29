@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/thoa_thuan" android:title="@string/thoa_thuan" />
+    <item android:id="@+id/quy_dinh" android:title="@string/quy_dinh" />
+    <item android:id="@+id/len_he" android:title="@string/lien_he" />
+    <item android:id="@+id/phan_hoi" android:title="@string/phan_hoi" />
+    <item android:id="@+id/about" android:title="@string/about" />
+    <item android:id="@+id/changePassword" android:title="@string/changePassword" />
+    <item android:id="@+id/log_out" android:title="@string/log_out" />
+</menu>
