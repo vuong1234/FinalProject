@@ -13,7 +13,7 @@ import androidx.viewpager.widget.PagerAdapter;
 
 import java.util.List;
 
-public class IntroViewPagerAdapter extends PagerAdapter {
+public class  IntroViewPagerAdapter extends PagerAdapter {
 
    Context mContext ;
    List<ScreenItem> mListScreen;

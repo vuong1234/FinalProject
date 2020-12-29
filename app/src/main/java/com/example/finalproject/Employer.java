@@ -1,6 +1,6 @@
 package com.example.finalproject;
 
-public class Employer {
+public class  Employer {
     private String name,image,address,welfare;
 
     public Employer(String name, String image, String address, String welfare) {

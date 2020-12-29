@@ -1,6 +1,6 @@
 package com.example.finalproject;
 
-public class ScreenItem {
+public class  ScreenItem {
 
     String Title,Description;
     int ScreenImg;

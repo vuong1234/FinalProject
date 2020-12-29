@@ -16,7 +16,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
-public class DetailRecruitmentActivity extends AppCompatActivity implements View.OnClickListener {
+public class  DetailRecruitmentActivity extends AppCompatActivity implements View.OnClickListener {
     TextView txtSalary,txtDate,txtReason,txtTile,txtAddress;
     Button btnSave,btnApply;
     String username,keyRecruiment ;

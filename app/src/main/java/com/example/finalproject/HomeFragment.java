@@ -44,7 +44,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class HomeFragment extends Fragment implements NavigationView.OnNavigationItemSelectedListener{
+public class  HomeFragment extends Fragment implements NavigationView.OnNavigationItemSelectedListener{
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle toggle;
     private Toolbar mToolBar;

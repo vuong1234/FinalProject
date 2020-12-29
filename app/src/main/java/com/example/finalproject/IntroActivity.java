@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class IntroActivity extends AppCompatActivity {
+public class  IntroActivity extends AppCompatActivity {
 
     private ViewPager screenPager;
     IntroViewPagerAdapter introViewPagerAdapter ;

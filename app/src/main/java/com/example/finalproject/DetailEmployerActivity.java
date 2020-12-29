@@ -10,6 +10,7 @@ import com.squareup.picasso.Picasso;
 
 public class DetailEmployerActivity extends AppCompatActivity {
     private ImageView imgLogoEmployer;
+
     private TextView txtNameEmployerDetail,txtAddressEmployerDetail,txtWelfareEmployerDetail;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

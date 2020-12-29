@@ -16,7 +16,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.Set;
 
-public class MainContentActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
+public class  MainContentActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
     private BottomNavigationView bottomNav;
     private String username;
     private SharedPreferences sharedPreferences;
