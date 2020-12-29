@@ -16,7 +16,6 @@ class MyViewHolderEmployer extends RecyclerView.ViewHolder implements View.OnCli
         txtNameEmployer = itemView.findViewById(R.id.txtNameEmployer);
         imgEmployer = itemView.findViewById(R.id.imgEmployer);
         itemView.setOnClickListener(this);
-
     }
     public void setItemClickListener(ItemClickListener itemClickListener) {
         this.itemClickListener = itemClickListener;

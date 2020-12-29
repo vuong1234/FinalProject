@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         edtUsernameLogin = findViewById(R.id.edtUsernameLogin);
         edtPasswordLogin= findViewById(R.id.edtPasswordLogin);
-
     }
 
     private void isUser() {

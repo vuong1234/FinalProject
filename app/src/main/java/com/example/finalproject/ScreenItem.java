@@ -11,7 +11,6 @@ public class ScreenItem {
         ScreenImg = screenImg;
     }
 
-
     public void setTitle(String title) {
         Title = title;
     }

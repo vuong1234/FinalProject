@@ -80,7 +80,6 @@ public class IntroActivity extends AppCompatActivity {
 
         tabIndicator.setupWithViewPager(screenPager);
 
-
         // next button click Listner
 
         btnNext.setOnClickListener(new View.OnClickListener() {

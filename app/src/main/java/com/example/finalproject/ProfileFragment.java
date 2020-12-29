@@ -241,7 +241,6 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
             uploadAvatar();
             uploadCV();
             showAlertDialog(R.layout.dialog_update);
-
         }
     }
     private void showAlertDialog(int layout){

@@ -26,7 +26,6 @@ class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListen
         btnLikeStatus = itemView.findViewById(R.id.btnLikeStatus);
         itemView.setOnClickListener(this);
 
-
         mVtem = itemView;
     }
 

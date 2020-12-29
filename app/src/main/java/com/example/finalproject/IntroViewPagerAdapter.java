@@ -18,7 +18,6 @@ public class IntroViewPagerAdapter extends PagerAdapter {
    Context mContext ;
    List<ScreenItem> mListScreen;
 
-
     public IntroViewPagerAdapter(Context mContext, List<ScreenItem> mListScreen) {
         this.mContext = mContext;
         this.mListScreen = mListScreen;

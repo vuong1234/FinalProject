@@ -19,7 +19,6 @@ import com.google.firebase.storage.StorageReference;
 public class DetailRecruitmentActivity extends AppCompatActivity implements View.OnClickListener {
     TextView txtSalary,txtDate,txtReason,txtTile,txtAddress;
     Button btnSave,btnApply;
-
     String username,keyRecruiment ;
     DatabaseReference reference  ;
     StorageReference storageReference  ;
