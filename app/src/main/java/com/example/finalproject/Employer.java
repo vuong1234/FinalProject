@@ -12,7 +12,6 @@ public class Employer {
 
     public Employer() {
     }
-
     public String getImage() {
         return image;
     }

@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.squareup.picasso.Picasso;
 
 public class DetailEmployerActivity extends AppCompatActivity {
+
     private ImageView imgLogoEmployer;
     private TextView txtNameEmployerDetail,txtAddressEmployerDetail,txtWelfareEmployerDetail;
     @Override

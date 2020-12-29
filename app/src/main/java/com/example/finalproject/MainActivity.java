@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         edtUsernameLogin = findViewById(R.id.edtUsernameLogin);
         edtPasswordLogin= findViewById(R.id.edtPasswordLogin);
 
-
     }
 
     private void isUser() {

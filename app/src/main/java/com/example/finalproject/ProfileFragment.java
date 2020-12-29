@@ -240,7 +240,6 @@ public class ProfileFragment extends Fragment implements View.OnClickListener {
             reference.child(username).child("experience").setValue(edtExperienceProfile.getText().toString());
             uploadAvatar();
             uploadCV();
-
             showAlertDialog(R.layout.dialog_update);
 
         }
