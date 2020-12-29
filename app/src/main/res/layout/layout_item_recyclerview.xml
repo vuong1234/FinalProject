@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/colorWhite">
+    <ImageView
+        android:id="@+id/imgLogoRecruitment"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:src="@drawable/illustration"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/txtTitleRecruitment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Associate - Accounting Tax Service (Urgent)"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/txtAddressRecruitment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Dia chi o day : 177 Bis Ly Chinh Thang"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/btnLikeStatus"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@drawable/button_like_status"
+        android:layout_gravity="center"
+        android:background="#00000000"
+        />
+
+</LinearLayout>
