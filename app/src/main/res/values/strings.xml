@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FindJob</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="thoa_thuan">Thỏa thuận sử dụng</string>
+    <string name="quy_dinh">Quy định bảo mật</string>
+    <string name="lien_he">Liên hệ với chúng tôi</string>
+    <string name="phan_hoi">Gửi phản hồi</string>
+    <string name="log_out">Đăng xuất</string>
+    <string name="about">Về chúng tôi</string>
+    <string name="reasonDemo">Using Android Studio, I have my MainActiviy class with a Placeholder fragment. This fragment has buttons, but one has to load an Activity. How does one do this? I was told to try something like the below, but the new Intent does not work</string>
+    <string name="changePassword">Đổi mật khẩu</string>
+    <string name="update_success">Cập nhập thành công</string>
+    <string name="luu_thanh_cong">Lưu thành công</string>
+    <string name="gui_cv_success">Gửi CV thành công</string>
+    <string name="register_success">Đăng kí thành công</string>
+</resources>
