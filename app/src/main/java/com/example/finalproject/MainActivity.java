@@ -31,33 +31,16 @@ import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private ImageButton btRegister;
-    private TextView tvLogin;
-    private Button btnLogin;
     private EditText edtUsernameLogin, edtPasswordLogin;
     private FirebaseAuth firebaseAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btRegister  = findViewById(R.id.btRegister);
-        tvLogin     = findViewById(R.id.tvLogin);
-        btnLogin = findViewById(R.id.btnLogin);
         edtUsernameLogin = findViewById(R.id.edtUsernameLogin);
         edtPasswordLogin= findViewById(R.id.edtPasswordLogin);
 
 
-        btRegister.setOnClickListener(this);
-        btnLogin.setOnClickListener(this);
-    }
-
-    private void loginAccount() {
-        if (!validateUserame() | !validatePassword()){
-            return;
-        }
-        else {
-            isUser();
-        }
     }
 
     private void isUser() {
@@ -70,20 +53,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if (dataSnapshot.exists()){
-                    String passwordFromDB = dataSnapshot.child(usernameEnter).child("password").getValue(String.class);
-                    if (passwordFromDB.equals(passwordEnter)){
-                        /*Intent intent = new Intent(MainActivity.this,LoginSuccessful.class);*/
-                        //lay username gui qua
-                        Intent intent = new Intent(MainActivity.this,MainContentActivity.class);
-                        intent.putExtra("username",usernameEnter);
-                        startActivity(intent);
-                    }
-                    else {
-                        edtPasswordLogin.setError("Mật khẩu không đúng ");
-                    }
+
                 }
-            }
+
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
@@ -92,46 +64,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
     }
 
-    private Boolean validateUserame(){
-        String username = edtUsernameLogin.getText().toString().trim();
-
-        if(username.isEmpty()){
-            edtUsernameLogin.setError("Tài khoản trống ");
-            return false;
-        }
-        else {
-            edtUsernameLogin.setError(null);
-            return true;
-        }
-    }
-    private boolean validatePassword(){
-        String password = edtPasswordLogin.getText().toString().trim();
-        if(password.isEmpty()){
-            edtPasswordLogin.setError("Mật khẩu trống ");
-            return false;
-        }
-        else {
-            edtPasswordLogin.setError(null);
-            return true;
-        }
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.btRegister:
-                Intent intent   = new Intent(MainActivity.this,RegisterActivity.class);
-                Pair[] pairs    = new Pair[1];
-                pairs[0] = new Pair<View, String>(tvLogin,"tvLogin");
-                ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this,pairs);
-                startActivity(intent,activityOptions.toBundle());
-                break;
-            case R.id.btnLogin:
-                loginAccount();
-                break;
-        }
-
-
-    }
 }

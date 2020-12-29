@@ -18,9 +18,6 @@
             android:parentActivityName=".MainContentActivity"
             android:theme="@style/AppTheme.FullScreen" />
         <activity
-            android:name=".MainContentActivity"
-            android:theme="@style/AppTheme.FullScreen" />
-        <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.FullScreen"/>
         <activity
@@ -32,9 +29,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".RegisterActivity"
-            android:theme="@style/AppTheme.FullScreen" />
     </application>
 
 </manifest>
